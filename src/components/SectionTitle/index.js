@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { BottomLine } from './styles';
+import { BottomLine, Container } from './styles';
 
 function SectionTitle({ title }) {
   return (
-    <div>
+    <Container>
       <h1>{ title }</h1>
       <BottomLine />
-    </div>);
+    </Container>);
 }
 
 export default SectionTitle;

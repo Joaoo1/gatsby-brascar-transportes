@@ -8,7 +8,7 @@ export default function Navbar({ scrolled }) {
     query {
       file(relativePath: { eq: "images/logo-white.png" }) {
         childImageSharp  {
-          fixed {
+          fixed(width: 134) {
             ...GatsbyImageSharpFixed
           }
         }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useStaticQuery } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image'
 
 import SectionTitle from '../SectionTitle'
@@ -36,8 +36,6 @@ function ServicesSection() {
     n.node.childImageSharp.fixed.originalName === 'services-jetski.png')
     .node.childImageSharp.fixed
 
-    console.log(jetImage)
-
   return(
         <section>
           <SectionTitle title="Nossos serviços" />
@@ -58,7 +56,7 @@ function ServicesSection() {
             </ServiceContainer>
             <hr />
             <ServiceContainer className="reverse">
-              <Img fixed={motoImage} />
+            <Img fixed={motoImage} />
               <ServiceInfo>
                 <h2>Transporte de Motos</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
@@ -70,6 +68,7 @@ function ServicesSection() {
                    cupidatat non proident, sunt in culpa qui officia deserunt 
                    mollit anim id est laborum.</p>
               </ServiceInfo>
+              
             </ServiceContainer>
             <hr />
             <ServiceContainer>

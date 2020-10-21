@@ -14,9 +14,11 @@ const SectionContainer = styled.div`
 
   section {
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
   }
 
-  @media screen and (max-width: 680px) {
+  @media screen and (max-width: 620px) {
     margin: 40px 30px;
   }
 `;

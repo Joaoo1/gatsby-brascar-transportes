@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticQuery,graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 
 import { Container, Image as Img, TextContainer, ButtonsContainer } from './styles'
 

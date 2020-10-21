@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 
-export const BottomLine = styled.div`
+const Container = styled.div`
+  margin-bottom: 30px;
+`
+
+const BottomLine = styled.div`
   border-bottom: 3px solid var(--accent-color);
   width: 80px;
-  margin-top: 12px;
+  margin-top: 5px;
 `;
+
+export { Container, BottomLine }

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Img from 'gatsby-image'
 
 import Budget from '../../assets/illustrations/budget.svg'
 
@@ -10,7 +9,6 @@ const Container = styled.div`
 const Form = styled.div`
   display:flex;
   flex-wrap: wrap;
-  margin-top: 15px;
 
   div {
     display:flex;
@@ -33,7 +31,7 @@ const Form = styled.div`
   }
 
   div.button {
-      flex: 1 100%;
+      flex: 1;
       
       button {
         width: 100%;
@@ -56,6 +54,7 @@ const Form = styled.div`
 
 const Illustration = styled(Budget)`
   margin: 25px 0 0 25px;
+  
   @media screen and (max-width: 1085px) {
     display: none;
   }
