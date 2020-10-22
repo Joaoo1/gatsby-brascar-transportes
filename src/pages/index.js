@@ -9,7 +9,7 @@ import ReviewsSection from '../components/ReviewsSection'
 import GallerySection from '../components/GallerySection'
 import Footer from '../components/Footer'
 
-import { SectionContainer, Container } from './styles'
+import { SectionContainer, Container } from './_styles'
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false)
