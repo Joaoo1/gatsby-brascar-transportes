@@ -1,26 +1,26 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 import Budget from '../../assets/illustrations/budget.svg'
 
 const Container = styled.div`
-  display:flex;
-`;
+  display: flex;
+`
 
 const Form = styled.div`
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
 
   div {
-    display:flex;
+    display: flex;
     flex-direction: column;
     padding: 0 10px 0 10px;
     margin-top: 15px;
     flex: 0 50%;
-    
+
     label {
       margin-bottom: 2px;
     }
-    
+
     input {
       height: 46px;
       padding-left: 8px;
@@ -31,17 +31,17 @@ const Form = styled.div`
   }
 
   div.button {
-      flex: 1;
-      
-      button {
-        width: 100%;
-        height: 48px;
-        border: none;
-        border-radius: 5px;
-        background-color: var(--accent-color);
-        color: white;
-        text-transform: uppercase;
-      }
+    flex: 1;
+
+    button {
+      width: 100%;
+      height: 48px;
+      border: none;
+      border-radius: 5px;
+      background-color: var(--accent-color);
+      color: white;
+      text-transform: uppercase;
+    }
   }
 
   @media screen and (max-width: 680px) {
@@ -50,14 +50,14 @@ const Form = styled.div`
       margin-bottom: 10px;
     }
   }
-  `
+`
 
 const Illustration = styled(Budget)`
   margin: 25px 0 0 25px;
-  
+
   @media screen and (max-width: 1085px) {
     display: none;
   }
-  `
+`
 
 export { Container, Form, Illustration }

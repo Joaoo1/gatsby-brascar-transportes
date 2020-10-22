@@ -1,11 +1,11 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 import Img from 'gatsby-image'
 
 const ImagesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-`;
+`
 
 const Image = styled(Img)`
   margin: 15px;
@@ -14,6 +14,6 @@ const Image = styled(Img)`
   @media screen and (max-width: 900px) {
     flex: 50%;
   }
-` 
+`
 
 export { ImagesContainer, Image }

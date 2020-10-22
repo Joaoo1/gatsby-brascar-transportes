@@ -1,11 +1,11 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const ReviewsContainer = styled.div`
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   max-width: 1300px;
- 
+
   @media screen and (max-width: 830px) {
     flex-direction: column;
     align-items: center;
@@ -14,7 +14,7 @@ const ReviewsContainer = styled.div`
       margin-top: 50px;
     }
   }
-`;
+`
 
 const Review = styled.div`
   max-width: 300px;
@@ -33,6 +33,6 @@ const Review = styled.div`
     margin-top: 30px;
     font-weight: 600;
   }
-`;
+`
 
 export { ReviewsContainer, Review }

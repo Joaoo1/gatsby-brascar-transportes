@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect } from 'react'
 
 import Header from '../components/Header'
 import Navbar from '../components/Navbar'
@@ -12,38 +12,38 @@ import Footer from '../components/Footer'
 import { SectionContainer, Container } from './styles'
 
 export default function Home() {
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false)
 
-  useEffect(() =>{
+  useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 20;
+      const isScrolled = window.scrollY > 20
       if (isScrolled !== scrolled) {
-        setScrolled(!scrolled);
+        setScrolled(!scrolled)
       }
-    };
+    }
 
-    document.addEventListener('scroll', handleScroll, { passive: true });
+    document.addEventListener('scroll', handleScroll, { passive: true })
 
     return () => {
       // clean up the event handler when the component unmounts
-      document.removeEventListener('scroll', handleScroll);
-    };
-  },[scrolled])
+      document.removeEventListener('scroll', handleScroll)
+    }
+  }, [scrolled])
 
-  return(
-    <> 
-      <Navbar scrolled={scrolled}/>
+  return (
+    <>
+      <Navbar scrolled={scrolled} />
       <Header />
       <Container>
         <SectionContainer>
-          <BugdetSection/>
-          <ServicesSection/>
-          <AboutSection/>
-          <ReviewsSection/>
-          <GallerySection/>
+          <BugdetSection />
+          <ServicesSection />
+          <AboutSection />
+          <ReviewsSection />
+          <GallerySection />
         </SectionContainer>
       </Container>
       <Footer />
     </>
-    ) 
+  )
 }

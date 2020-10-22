@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
 
@@ -55,5 +55,3 @@ body, input, button, textarea {
     font-size: 62.5%;
   }
 }`
-
-  

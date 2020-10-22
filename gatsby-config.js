@@ -21,7 +21,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
-    `gatsby-transformer-sharp`, 
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-nprogress`,
@@ -32,7 +32,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-1180672068-1",
+        trackingId: 'UA-1180672068-1',
       },
     },
     {
@@ -41,7 +41,7 @@ module.exports = {
         fonts: [
           {
             family: `Poppins`,
-            variants: [`300`,`400`,`600`,`700`]
+            variants: [`300`, `400`, `600`, `700`],
           },
         ],
       },
@@ -55,16 +55,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
-        displayName: process.env.NODE_ENV !== 'production'
+        displayName: process.env.NODE_ENV !== 'production',
       },
     },
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
           include: /assets/,
-        }
-      }
-    }
+        },
+      },
+    },
   ],
 }

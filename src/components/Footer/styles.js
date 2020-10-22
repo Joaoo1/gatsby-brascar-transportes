@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const FooterContainer = styled.footer`
- background-color: var(--primary-color);
+  background-color: var(--primary-color);
 `
 const Container = styled.div`
   width: 100%;
@@ -23,7 +23,7 @@ const Container = styled.div`
   }
 
   .half {
-    display:flex;
+    display: flex;
     flex-direction: column;
 
     div:nth-child(2) {
@@ -35,7 +35,7 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
   }
-`;
+`
 
 const FooterItem = styled.div`
   margin: 30px 30px 0 30px;
@@ -46,10 +46,10 @@ const FooterItem = styled.div`
   }
 
   .contact-item {
-    display:flex;
+    display: flex;
     align-items: center;
 
-    p{
+    p {
       margin-right: 10px;
     }
   }
@@ -58,7 +58,6 @@ const FooterItem = styled.div`
     line-height: 3;
     font-weight: 300;
   }
-`;
-
+`
 
 export { FooterContainer, Container, FooterItem }

@@ -1,35 +1,36 @@
-import React from 'react';
-import { graphql, StaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
-import { FiClock, FiMapPin} from 'react-icons/fi'
+import React from 'react'
+import { graphql, StaticQuery } from 'gatsby'
+import Img from 'gatsby-image'
+import { FiClock, FiMapPin } from 'react-icons/fi'
 import { FaWhatsapp, FaInstagram } from 'react-icons/fa'
 import { TiContacts } from 'react-icons/ti'
 import { MdLockOutline } from 'react-icons/md'
 
-import { FooterContainer, Container, FooterItem } from './styles';
+import { FooterContainer, Container, FooterItem } from './styles'
 
 function Footer() {
   const graphqlQuery = graphql`
-  query {
-    footerLogo: file(relativePath: { eq: "images/footer-logo.png" }) {
-      childImageSharp  {
-        fixed(width: 240, height: 160) {
-          ...GatsbyImageSharpFixed
+    query {
+      footerLogo: file(relativePath: { eq: "images/footer-logo.png" }) {
+        childImageSharp {
+          fixed(width: 240, height: 160) {
+            ...GatsbyImageSharpFixed
+          }
         }
       }
-    }
 
-    insuranceLogo: file(relativePath: { eq: "images/insurance-logo.png" }) {
-      childImageSharp  {
-        fixed(width: 150, height: 38) {
-          ...GatsbyImageSharpFixed
+      insuranceLogo: file(relativePath: { eq: "images/insurance-logo.png" }) {
+        childImageSharp {
+          fixed(width: 150, height: 38) {
+            ...GatsbyImageSharpFixed
+          }
         }
       }
     }
-  }`
+  `
 
   return (
-     <StaticQuery
+    <StaticQuery
       query={graphqlQuery}
       render={data => (
         <FooterContainer>
@@ -44,8 +45,8 @@ function Footer() {
                 <FiClock size={32} />
                 <h3>Horário de funcionamento</h3>
               </div>
-                <p>De segunda a sexta das 8h às 18h</p>
-                <p>Sábado das 8h às 12h</p>
+              <p>De segunda a sexta das 8h às 18h</p>
+              <p>Sábado das 8h às 12h</p>
             </FooterItem>
 
             <div className="half">
@@ -54,9 +55,9 @@ function Footer() {
                   <FiMapPin size={28} />
                   <h3>Localização</h3>
                 </div>
-                  <p>Rua indiana nº 78, Passa-vinte, Palhoça - SC</p>
+                <p>Rua indiana nº 78, Passa-vinte, Palhoça - SC</p>
               </FooterItem>
-              
+
               <FooterItem>
                 <div className="item-header">
                   <MdLockOutline size={32} />
@@ -84,8 +85,9 @@ function Footer() {
             </FooterItem>
           </Container>
         </FooterContainer>
-      )} />
-  );
+      )}
+    />
+  )
 }
 
-export default Footer;
+export default Footer
