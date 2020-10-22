@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 import BugdetSection from '../components/BugdetSection'
 import ServicesSection from '../components/ServicesSection'
 import AboutSection from '../components/AboutSection'
+import ReviewsSection from '../components/ReviewsSection'
 import GallerySection from '../components/GallerySection'
 import Footer from '../components/Footer'
 
@@ -38,6 +39,7 @@ export default function Home() {
           <BugdetSection/>
           <ServicesSection/>
           <AboutSection/>
+          <ReviewsSection/>
           <GallerySection/>
         </SectionContainer>
       </Container>

@@ -3,7 +3,6 @@ import React from 'react';
 import SectionTitle from '../SectionTitle'
 import { Container, Form, Illustration } from './styles';
 
-
 function BudgetSection() {
 
   return (
