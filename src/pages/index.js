@@ -33,17 +33,17 @@ export default function Home() {
   return (
     <>
       <Navbar scrolled={scrolled} />
-      <Header />
+      <Header id="home"/>
       <Container>
         <SectionContainer>
-          <BugdetSection />
-          <ServicesSection />
-          <AboutSection />
-          <ReviewsSection />
-          <GallerySection />
+          <BugdetSection id="bugdet"/>
+          <ServicesSection id="services"/>
+          <AboutSection id="about"/>
+          <ReviewsSection/>
+          <GallerySection/>
         </SectionContainer>
       </Container>
-      <Footer />
+      <Footer id="contact"/>
     </>
   )
 }

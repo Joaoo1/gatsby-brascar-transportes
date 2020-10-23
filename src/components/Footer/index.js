@@ -8,7 +8,7 @@ import { MdLockOutline } from 'react-icons/md'
 
 import { FooterContainer, Container, FooterItem } from './styles'
 
-function Footer() {
+function Footer({ id }) {
   const graphqlQuery = graphql`
     query {
       footerLogo: file(relativePath: { eq: "images/footer-logo.png" }) {
@@ -34,6 +34,7 @@ function Footer() {
       query={graphqlQuery}
       render={data => (
         <FooterContainer>
+          <a className="anchor" id={id} />
           <Container>
             <div class="logo-container">
               <Img fixed={data.footerLogo.childImageSharp.fixed} />

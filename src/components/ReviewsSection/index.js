@@ -5,9 +5,10 @@ import SectionTitle from '../SectionTitle'
 
 import { Review, ReviewsContainer } from './styles'
 
-function ReviewsSection() {
+function ReviewsSection({ id }) {
   return (
     <section>
+      <a className="anchor" id={id} />
       <SectionTitle title="Depoimentos" />
       <ReviewsContainer>
         <Review>

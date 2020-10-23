@@ -34,11 +34,11 @@ export default function Navbar({ scrolled }) {
               fixed={data.file.childImageSharp.fixed}
             />
             <Menu>
-              <li>Início</li>
-              <li>Serviços</li>
-              <li>Orçamento</li>
-              <li>Sobre</li>
-              <li>Contato</li>
+              <a href="#home"><li>Início</li></a>
+              <a href="#services"><li>Serviços</li></a>
+              <a href="#bugdet"><li>Orçamento</li></a>
+              <a href="#about"><li>Sobre</li></a>
+              <a href="#contact"><li>Contato</li></a>
             </Menu>
             <MenuHamburguer size={32} color="white" />
           </NavbarContainer>

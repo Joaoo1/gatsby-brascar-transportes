@@ -8,7 +8,7 @@ import {
   ButtonsContainer,
 } from './styles'
 
-export default function Header() {
+export default function Header({ id }) {
   const graphqlQuery = graphql`
     query {
       file(relativePath: { eq: "images/header-background.png" }) {
@@ -25,7 +25,7 @@ export default function Header() {
     <StaticQuery
       query={graphqlQuery}
       render={data => (
-        <Container>
+        <Container id={id}>
           <Img fluid={data.file.childImageSharp.fluid} />
           <TextContainer>
             <h1>Transporte de veículos</h1>

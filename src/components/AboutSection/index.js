@@ -4,9 +4,10 @@ import SectionTitle from '../SectionTitle'
 
 import { Container } from './styles'
 
-function AboutSection() {
+function AboutSection({ id }) {
   return (
     <section>
+      <a className="anchor" id={id} />
       <Container>
         <SectionTitle title="Quem somos" />
         <p>

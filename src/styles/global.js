@@ -48,6 +48,12 @@ body, input, button, textarea {
     h2 {
       font-size: 2.4rem;
     }
+
+    a.anchor {
+    display: block;
+    position: relative;
+    top: -150px;
+}
   }
   
 @media (min-width: 721px) {

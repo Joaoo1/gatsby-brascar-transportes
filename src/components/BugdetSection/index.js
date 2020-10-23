@@ -3,9 +3,10 @@ import React from 'react'
 import SectionTitle from '../SectionTitle'
 import { Container, Form, Illustration } from './styles'
 
-function BudgetSection() {
+function BudgetSection({ id }) {
   return (
     <section>
+      <a className="anchor" id={id} />
       <SectionTitle title="Solicite um orçamento" />
       <Container>
         <Form>

@@ -6,7 +6,7 @@ import SectionTitle from '../SectionTitle'
 
 import { Container, ServiceContainer, ServiceInfo } from './styles'
 
-function ServicesSection() {
+function ServicesSection({ id }) {
   const { allFile } = useStaticQuery(graphql`
     query {
       allFile(filter: { relativeDirectory: { eq: "images/services" } }) {
@@ -38,6 +38,7 @@ function ServicesSection() {
 
   return (
     <section>
+      <a className="anchor" id={id} />
       <SectionTitle title="Nossos serviços" />
       <Container>
         <ServiceContainer>

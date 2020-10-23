@@ -4,7 +4,7 @@ import React from 'react'
 import SectionTitle from '../SectionTitle'
 import { ImagesContainer, Image as Img } from './styles'
 
-function GallerySection() {
+function GallerySection({ id }) {
   const graphqlQuery = graphql`
     query {
       allFile(filter: { relativeDirectory: { eq: "images/gallery" } }) {
@@ -25,6 +25,7 @@ function GallerySection() {
       query={graphqlQuery}
       render={data => (
         <section>
+          <a className="anchor" id={id} />
           <SectionTitle title="Galeria" />
           <ImagesContainer>
             {data.allFile.edges.map(n => {

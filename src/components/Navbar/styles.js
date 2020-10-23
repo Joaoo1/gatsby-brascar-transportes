@@ -43,6 +43,11 @@ const Menu = styled.ul`
     :hover {
       background-color: rgba(255, 255, 255, 0.15);
     }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
   }
 `
 
