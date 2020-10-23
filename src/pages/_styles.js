@@ -8,14 +8,17 @@ const Container = styled.div`
 
 const SectionContainer = styled.div`
   width: 100%;
-  max-width: 1280px;
-  margin: 40px;
-  padding: 0 15px;
+  max-width: 1200px;
+  margin: 50px;
 
   section {
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
+  }
+
+  @media screen and (max-width: 500px) {
+    margin: 50px 30px;
   }
 `
 

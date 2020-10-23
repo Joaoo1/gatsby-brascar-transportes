@@ -13,9 +13,9 @@ function ServicesSection() {
         edges {
           node {
             childImageSharp {
-              fixed(height: 200, fit: FILL) {
+              fluid(maxWidth: 380, maxHeight: 200, quality: 100) {
                 originalName
-                ...GatsbyImageSharpFixed
+                ...GatsbyImageSharpFluid
               }
             }
           }
@@ -25,23 +25,25 @@ function ServicesSection() {
   `)
 
   const carImage = allFile.edges.find(
-    n => n.node.childImageSharp.fixed.originalName === 'services-cars.png'
-  ).node.childImageSharp.fixed
+    n => n.node.childImageSharp.fluid.originalName === 'services-cars.png'
+  ).node.childImageSharp.fluid
 
   const motoImage = allFile.edges.find(
-    n => n.node.childImageSharp.fixed.originalName === 'services-motocycles.png'
-  ).node.childImageSharp.fixed
+    n => n.node.childImageSharp.fluid.originalName === 'services-motocycles.png'
+  ).node.childImageSharp.fluid
 
   const jetImage = allFile.edges.find(
-    n => n.node.childImageSharp.fixed.originalName === 'services-jetski.png'
-  ).node.childImageSharp.fixed
+    n => n.node.childImageSharp.fluid.originalName === 'services-jetski.png'
+  ).node.childImageSharp.fluid
 
   return (
     <section>
       <SectionTitle title="Nossos serviços" />
       <Container>
         <ServiceContainer>
-          <Img fixed={carImage} />
+          <div className="image-container">
+            <Img fluid={carImage} imgStyle={{objectFit: 'contain'}} />
+          </div>
           <ServiceInfo>
             <h2>Transporte de Carros</h2>
             <p>
@@ -57,7 +59,9 @@ function ServicesSection() {
         </ServiceContainer>
         <hr />
         <ServiceContainer className="reverse">
-          <Img fixed={motoImage} />
+          <div className="image-container">
+            <Img fluid={motoImage} imgStyle={{objectFit: 'contain'}} />
+          </div>
           <ServiceInfo>
             <h2>Transporte de Motos</h2>
             <p>
@@ -73,7 +77,9 @@ function ServicesSection() {
         </ServiceContainer>
         <hr />
         <ServiceContainer>
-          <Img fixed={jetImage} />
+        <div className="image-container">
+            <Img fluid={jetImage} imgStyle={{objectFit: 'contain'}} />
+          </div>
           <ServiceInfo>
             <h2>Transporte de Jet Skis</h2>
             <p>

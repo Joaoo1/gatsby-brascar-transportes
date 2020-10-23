@@ -24,9 +24,14 @@ const ServiceContainer = styled.div`
   align-items: center;
   flex-direction: row;
 
+  .image-container {
+    width: 100%;
+    max-width: 380px;
+    max-height: 200px;
+  }
+
   img {
     border-radius: 10px;
-    width: 100%;
   }
 
   @media screen and (max-width: 900px) {
