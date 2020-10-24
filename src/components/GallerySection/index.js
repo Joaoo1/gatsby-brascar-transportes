@@ -25,12 +25,15 @@ function GallerySection({ id }) {
       query={graphqlQuery}
       render={data => (
         <section>
-          <a className="anchor" id={id} />
+          <div className="anchor" id={id} />
           <SectionTitle title="Galeria" />
           <ImagesContainer>
             {data.allFile.edges.map(n => {
               const fluid = n.node.childImageSharp.fluid
-              return <Img imgStyle={{ borderRadius: '10px' }} fluid={fluid} />
+              return <Img 
+                        key={fluid.src}
+                        fluid={fluid}
+                        imgStyle={{ borderRadius: '10px' }} />
             })}
           </ImagesContainer>
         </section>

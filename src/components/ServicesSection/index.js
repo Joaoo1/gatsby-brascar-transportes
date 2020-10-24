@@ -38,12 +38,16 @@ function ServicesSection({ id }) {
 
   return (
     <section>
-      <a className="anchor" id={id} />
+      <div className="anchor" id={id} />
       <SectionTitle title="Nossos serviços" />
       <Container>
         <ServiceContainer>
           <div className="image-container">
-            <Img fluid={carImage} imgStyle={{objectFit: 'contain'}} />
+            <Img
+              fluid={carImage}
+              alt={carImage.originalName}
+              imgStyle={{ objectFit: 'contain' }}
+            />
           </div>
           <ServiceInfo>
             <h2>Transporte de Carros</h2>
@@ -61,7 +65,11 @@ function ServicesSection({ id }) {
         <hr />
         <ServiceContainer className="reverse">
           <div className="image-container">
-            <Img fluid={motoImage} imgStyle={{objectFit: 'contain'}} />
+            <Img
+              fluid={motoImage}
+              alt={motoImage.originalName}
+              imgStyle={{ objectFit: 'contain' }}
+            />
           </div>
           <ServiceInfo>
             <h2>Transporte de Motos</h2>
@@ -78,8 +86,12 @@ function ServicesSection({ id }) {
         </ServiceContainer>
         <hr />
         <ServiceContainer>
-        <div className="image-container">
-            <Img fluid={jetImage} imgStyle={{objectFit: 'contain'}} />
+          <div className="image-container">
+            <Img
+              fluid={jetImage}
+              alt={jetImage.originalName}
+              imgStyle={{ objectFit: 'contain' }}
+            />
           </div>
           <ServiceInfo>
             <h2>Transporte de Jet Skis</h2>

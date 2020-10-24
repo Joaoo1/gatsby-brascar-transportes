@@ -7,7 +7,7 @@ import { Container } from './styles'
 function AboutSection({ id }) {
   return (
     <section>
-      <a className="anchor" id={id} />
+      <div className="anchor" id={id} />
       <Container>
         <SectionTitle title="Quem somos" />
         <p>

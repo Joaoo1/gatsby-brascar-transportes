@@ -42,8 +42,12 @@ export default function Header({ id }) {
             </p>
 
             <ButtonsContainer>
-              <button>Solicitar orçamento</button>
-              <button>Entrar em contato</button>
+              <button>
+                <a href="#bugdet">Solicitar orçamento</a>
+              </button>
+              <button>
+                <a href="#contact">Entrar em contato</a>
+              </button>
             </ButtonsContainer>
           </TextContainer>
         </Container>

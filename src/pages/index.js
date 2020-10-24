@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Helmet } from 'react-helmet'
 
 import Header from '../components/Header'
 import Navbar from '../components/Navbar'
@@ -32,18 +33,25 @@ export default function Home() {
 
   return (
     <>
+      <Helmet>
+        <title>Brascar transportes de veiculos</title>
+        <meta
+          name="description"
+          content="Transporte de veículos para todo o Brasil, de forma segura e ágil"
+        />
+      </Helmet>
       <Navbar scrolled={scrolled} />
-      <Header id="home"/>
+      <Header id="home" />
       <Container>
         <SectionContainer>
-          <BugdetSection id="bugdet"/>
-          <ServicesSection id="services"/>
-          <AboutSection id="about"/>
-          <ReviewsSection/>
-          <GallerySection/>
+          <BugdetSection id="bugdet" />
+          <ServicesSection id="services" />
+          <AboutSection id="about" />
+          <ReviewsSection />
+          <GallerySection />
         </SectionContainer>
       </Container>
-      <Footer id="contact"/>
+      <Footer id="contact" />
     </>
   )
 }

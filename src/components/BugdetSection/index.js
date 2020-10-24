@@ -6,7 +6,7 @@ import { Container, Form, Illustration } from './styles'
 function BudgetSection({ id }) {
   return (
     <section>
-      <a className="anchor" id={id} />
+      <div className="anchor" id={id} />
       <SectionTitle title="Solicite um orçamento" />
       <Container>
         <Form>

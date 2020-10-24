@@ -8,7 +8,7 @@ import { Review, ReviewsContainer } from './styles'
 function ReviewsSection({ id }) {
   return (
     <section>
-      <a className="anchor" id={id} />
+      <div className="anchor" id={id} />
       <SectionTitle title="Depoimentos" />
       <ReviewsContainer>
         <Review>

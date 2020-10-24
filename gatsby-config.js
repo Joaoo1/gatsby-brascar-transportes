@@ -13,6 +13,7 @@ module.exports = {
     siteUrl: `https://www.brascartransportes.com`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

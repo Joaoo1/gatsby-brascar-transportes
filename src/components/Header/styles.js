@@ -48,10 +48,21 @@ const ButtonsContainer = styled.div`
     background-color: #002f41;
     height: 60px;
     width: 210px;
-    font-weight: 600;
-    color: #ffffff;
     border-radius: 7px;
     border: none;
+
+    a {
+      font-weight: 600;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    @media screen and (max-width: 400px) {
+      a {
+        padding: 0px;
+      }
+    }
   }
 
   button:last-child {

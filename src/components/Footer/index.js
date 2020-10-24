@@ -34,9 +34,8 @@ function Footer({ id }) {
       query={graphqlQuery}
       render={data => (
         <FooterContainer>
-          <a className="anchor" id={id} />
           <Container>
-            <div class="logo-container">
+            <div className="logo-container">
               <Img fixed={data.footerLogo.childImageSharp.fixed} />
               <p>Transportando seu veículo com agilidade e segurança</p>
             </div>
@@ -69,6 +68,7 @@ function Footer({ id }) {
             </div>
 
             <FooterItem>
+              <div className="anchor" id={id} />
               <div className="item-header">
                 <TiContacts size={36} />
                 <h3>Contatos</h3>
