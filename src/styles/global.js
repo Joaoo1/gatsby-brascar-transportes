@@ -49,7 +49,7 @@ body, input, button, textarea {
       font-size: 2.4rem;
     }
 
-    a.anchor {
+    .anchor {
     display: block;
     position: relative;
     top: -150px;
