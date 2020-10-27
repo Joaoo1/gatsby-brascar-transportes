@@ -41,6 +41,11 @@ const FooterItem = styled.div`
   margin: 30px 30px 0 30px;
   max-width: 253px;
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   .item-header {
     color: var(--footer-font-color);
   }

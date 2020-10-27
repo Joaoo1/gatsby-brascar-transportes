@@ -73,15 +73,20 @@ function Footer({ id }) {
                 <TiContacts size={36} />
                 <h3>Contatos</h3>
               </div>
-              <p>dionardo.viana@email.com</p>
-              <div className="contact-item">
+              <p>brascar@brascartransportes.com</p>
+              <a href="https://www.instagram.com/brascar_transportes">
+                <div className="contact-item">
                 <p>@brascar_transportes</p>
                 <FaInstagram size={20} />
-              </div>
-              <div className="contact-item">
-                <p>(48) 99187-5244 </p>
-                <FaWhatsapp size={20} />
-              </div>
+                </div>
+              </a>
+              
+              <a href="https://api.whatsapp.com/send?phone=5548991875244">
+                <div className="contact-item">
+                  <p>(48) 99187-5244 </p>
+                  <FaWhatsapp size={20} />
+                </div>
+              </a>
               <p>Respondemos 24h por dia pelo whatsapp</p>
             </FooterItem>
           </Container>
