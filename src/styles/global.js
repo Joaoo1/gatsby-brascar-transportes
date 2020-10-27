@@ -27,14 +27,16 @@ export default createGlobalStyle`
 
   ul {
 	list-style: none;
-}
+  }
 
-body, input, button, textarea {
-  font: 400 1.5rem Poppins;
-  color: var(--primary-font-color);
-  -webkit-font-smoothing: antialiased;
-}
+  body, input, button, textarea {
+    font: 400 1.5rem Poppins;
+    color: var(--primary-font-color);
+    -webkit-font-smoothing: antialiased;
+  }
+
   body {
+    overflow-x: hidden;
     background-color: '#fafafa';
     
     h1, h2 {

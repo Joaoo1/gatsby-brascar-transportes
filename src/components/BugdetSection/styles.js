@@ -6,7 +6,7 @@ const Container = styled.div`
   display: flex;
 `
 
-const Form = styled.div`
+const Form = styled.form`
   display: flex;
   flex-wrap: wrap;
 
