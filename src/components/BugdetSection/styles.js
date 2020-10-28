@@ -6,7 +6,7 @@ const Container = styled.div`
   display: flex;
 `
 
-const Form = styled.div`
+const Form = styled.form`
   display: flex;
   flex-wrap: wrap;
 
@@ -41,6 +41,11 @@ const Form = styled.div`
       background-color: var(--accent-color);
       color: white;
       text-transform: uppercase;
+
+      :hover {
+        opacity: 0.8;
+        transition: opacity 0.2s;
+      }
     }
   }
 
