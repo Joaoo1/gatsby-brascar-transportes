@@ -6,13 +6,12 @@ function Snackbar({ msg }) {
   const [isShowingSnackbar, setShowingSnackbar] = useState(false);
 
   useEffect(() =>{
-    console.log(msg, "teste")
     if(msg !== "") {
       setShowingSnackbar(true)
 
-    setTimeout(() => {
-      setShowingSnackbar(false)
-    }, 3000)
+      setTimeout(() => {
+        setShowingSnackbar(false)
+      }, 5000)
     }
   }, [msg])
 

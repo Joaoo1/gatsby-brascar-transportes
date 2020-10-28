@@ -41,6 +41,11 @@ const Form = styled.form`
       background-color: var(--accent-color);
       color: white;
       text-transform: uppercase;
+
+      :hover {
+        opacity: 0.8;
+        transition: opacity 0.2s;
+      }
     }
   }
 

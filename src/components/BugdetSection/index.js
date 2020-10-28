@@ -11,8 +11,6 @@ function BudgetSection({ id }) {
   
   function submitForm(e) {
     e.preventDefault();
-    setSnackbarMessage("Formulário enviado com sucesso!")
-    /*
     const form = e.target;
     const data = new FormData(form);
     const xhr = new XMLHttpRequest();
@@ -22,35 +20,38 @@ function BudgetSection({ id }) {
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
       if (xhr.status === 200) {
         form.reset();
-        
+        setSnackbarMessage("Formulário enviado com sucesso!")
       } else {
         setSnackbarMessage("Erro ao enviar, entre em contato pelo whatsapp ou email!")
       }
     };
-    xhr.send(data);*/
+    setTimeout(() => {
+      setSnackbarMessage("")
+    }, 6000)
+    
+    xhr.send(data);
   }
 
   return (
     <section>
-      {
-        snackbarMessage != "" ? <Snackbar msg={snackbarMessage} /> : null
-      }
+      <Snackbar msg={snackbarMessage} />
+      
       <div className="anchor" id={id} />
       <SectionTitle title="Solicite um orçamento" />
       <Container>
         <Form
            onSubmit={submitForm}
-           //action="https://getform.io/f/35f785fc-d477-4f95-b193-722b19728c54"
+           action="https://getform.io/f/35f785fc-d477-4f95-b193-722b19728c54"
            method="POST"
         >
           <div>
             <label htmlFor="name">Nome</label>
-            <input id="name" type="text" name="Nome do cliente"/>
+            <input id="name" type="text" name="Nome do cliente" required/>
           </div>
 
           <div>
             <label htmlFor="phone">Telefone</label>
-            <input id="phone" type="text" name="Telefone"/>
+            <input id="phone" type="text" name="Telefone" required/>
           </div>
 
           <div>

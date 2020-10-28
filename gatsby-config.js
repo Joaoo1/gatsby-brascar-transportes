@@ -13,6 +13,14 @@ module.exports = {
     siteUrl: `https://www.brascartransportes.com`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-180672068-1",
+        head: true,
+        anonymize: true,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -28,12 +36,6 @@ module.exports = {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         color: `#6C63FF`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-1180672068-1',
       },
     },
     {

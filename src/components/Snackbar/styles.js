@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  visibility: ${props => props.isShowingSnackbar ? 'visible' : 'hidden'}; /* Hidden by default. Visible on click */
+  display: ${props => props.isShowingSnackbar ? 'block' : 'none'}; /* Hidden by default. Visible on click */
   min-width: 250px; /* Set a default minimum width */
   margin-left: -125px; /* Divide value of min-width by 2 */
   background-color: #333; /* Black background color */
